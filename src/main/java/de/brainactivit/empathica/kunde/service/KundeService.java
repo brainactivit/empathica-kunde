@@ -19,19 +19,19 @@ public class KundeService {
 
     public Kunde saveKunde(Kunde toStore) {
 
-        logger.info("");
+        logger.info("save kunde");
         return kundeRepository.save(toStore);
     }
 
     public Optional<Kunde> getKundeById(long kundeId) {
 
-        logger.info("");
+        logger.info("get kunde with id " + kundeId);
         return kundeRepository.findById(kundeId);
     }
 
     public Iterable<Kunde> getAllKunde() {
 
-        logger.info("");
+        logger.info("looking up all kunde");
         return kundeRepository.findAll();
     }
 
