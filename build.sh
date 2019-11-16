@@ -1,1 +1,1 @@
-docker build -t brainactivitcom/kunde:tj-141119 .
+docker build -t eu.gcr.io/brainactivit/empathica-kunde:latestlocal .
