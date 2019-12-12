@@ -7,6 +7,6 @@ steps:
   args: ['push', 'eu.gcr.io/brainactivit/empathica-kunde:$SHORT_SHA']
   # Deploy container image to Cloud Run
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['beta', 'run', 'deploy', 'empathica-kunde-gcptest', '--image', 'eu.gcr.io/brainactivit/empathica-kunde:$SHORT_SHA', '--region', 'europe-west1','--platform', 'managed', '--quiet', '--update-env-vars', 'SPRING_PROFILES_ACTIVE=gcpTest', '--memory', '512MiB']
+  args: ['beta', 'run', 'deploy', 'empathica-kunde-gcptest', '--image', 'eu.gcr.io/brainactivit/empathica-kunde:$SHORT_SHA', '--region', 'europe-west1','--platform', 'managed', '--quiet', '--update-env-vars', 'SPRING_PROFILES_ACTIVE=gcpTest', '--memory', '512M']
 images:
 - eu.gcr.io/brainactivit/empathica-kunde:$SHORT_SHA
